@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tomi Gbeleyi, Sales Leader, Founder, Builder</title>
+<title>Tomi Gbeleyi · Sales Leader · Builder</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -61,7 +61,6 @@ nav {
   z-index: 100;
   padding: 24px 48px;
   display: flex; align-items: center; justify-content: space-between;
-  mix-blend-mode: normal;
 }
 .nav-logo {
   font-family: 'Cormorant Garamond', serif;
@@ -112,8 +111,7 @@ nav {
   user-select: none;
 }
 .hero-line {
-  width: 1px;
-  height: 80px;
+  width: 1px; height: 80px;
   background: linear-gradient(to bottom, transparent, var(--gold));
   margin-bottom: 32px;
   opacity: 0;
@@ -140,12 +138,9 @@ nav {
   opacity: 0;
   animation: fadeUp 1s 0.7s forwards;
 }
-.hero h1 em {
-  font-style: italic;
-  color: var(--gold2);
-}
+.hero h1 em { font-style: italic; color: var(--gold2); }
 .hero-sub {
-  max-width: 500px;
+  max-width: 540px;
   font-size: 15px;
   font-weight: 300;
   line-height: 1.75;
@@ -187,11 +182,8 @@ nav {
 
 .hero-metrics {
   position: absolute;
-  right: 48px;
-  bottom: 80px;
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
+  right: 48px; bottom: 80px;
+  display: flex; flex-direction: column; gap: 28px;
   text-align: right;
   opacity: 0;
   animation: fadeLeft 1s 1.3s forwards;
@@ -204,9 +196,7 @@ nav {
   line-height: 1;
   letter-spacing: -0.02em;
 }
-.hero-metric-num span {
-  color: var(--gold2);
-}
+.hero-metric-num span { color: var(--gold2); }
 .hero-metric-lbl {
   font-size: 10px;
   font-weight: 500;
@@ -217,26 +207,18 @@ nav {
 }
 
 .scroll-indicator {
-  position: absolute;
-  bottom: 32px;
-  left: 50%;
+  position: absolute; bottom: 32px; left: 50%;
   transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
   opacity: 0;
   animation: fadeUp 1s 1.5s forwards;
 }
 .scroll-indicator span {
-  font-size: 9px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+  font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase;
   color: rgba(245,240,232,0.3);
 }
 .scroll-line {
-  width: 1px;
-  height: 40px;
+  width: 1px; height: 40px;
   background: linear-gradient(to bottom, rgba(245,240,232,0.3), transparent);
   animation: scrollPulse 2s infinite;
 }
@@ -244,513 +226,364 @@ nav {
 /* ── INTRO ── */
 .intro {
   padding: 120px 48px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1200px; margin: 0 auto;
 }
 .intro-label {
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 24px;
+  font-size: 10px; font-weight: 500; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 24px;
 }
 .intro h2 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(36px, 4vw, 56px);
-  font-weight: 300;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  color: var(--navy);
+  font-size: clamp(36px, 4vw, 56px); font-weight: 300;
+  line-height: 1.1; letter-spacing: -0.02em; color: var(--navy);
 }
-.intro h2 em {
-  font-style: italic;
-  color: var(--gold);
-}
-.intro-body {
-  padding-top: 8px;
-}
+.intro h2 em { font-style: italic; color: var(--gold); }
+.intro-body { padding-top: 8px; }
 .intro-body p {
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 1.85;
-  color: var(--muted);
-  margin-bottom: 20px;
+  font-size: 15px; font-weight: 300; line-height: 1.85;
+  color: var(--muted); margin-bottom: 20px;
 }
-.intro-body p strong {
-  color: var(--text);
-  font-weight: 500;
-}
-.intro-divider {
-  width: 40px;
-  height: 1px;
-  background: var(--gold);
-  margin: 28px 0;
-}
+.intro-body p strong { color: var(--text); font-weight: 500; }
+.intro-divider { width: 40px; height: 1px; background: var(--gold); margin: 28px 0; }
 
 /* ── STATS BAND ── */
 .stats-band {
   background: var(--navy);
   padding: 64px 48px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
-  background-color: var(--border);
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 1px; background-color: var(--border);
 }
 .stat-cell {
-  background: var(--navy);
-  padding: 40px 40px;
-  position: relative;
+  background: var(--navy); padding: 40px 40px; position: relative;
 }
 .stat-cell::after {
-  content: '';
-  position: absolute;
-  right: 0; top: 20%; bottom: 20%;
-  width: 1px;
-  background: rgba(196,131,42,0.15);
+  content: ''; position: absolute; right: 0; top: 20%; bottom: 20%;
+  width: 1px; background: rgba(196,131,42,0.15);
 }
 .stat-cell:last-child::after { display: none; }
 .stat-num {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 52px;
-  font-weight: 300;
-  line-height: 1;
-  color: var(--cream);
-  letter-spacing: -0.02em;
-  margin-bottom: 8px;
+  font-size: 52px; font-weight: 300; line-height: 1;
+  color: var(--cream); letter-spacing: -0.02em; margin-bottom: 8px;
 }
 .stat-num em { color: var(--gold2); font-style: normal; }
 .stat-label {
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: rgba(245,240,232,0.35);
+  font-size: 10px; font-weight: 500; letter-spacing: 0.15em;
+  text-transform: uppercase; color: rgba(245,240,232,0.35);
+}
+
+/* ── AWARDS ── */
+.awards-section {
+  padding: 120px 48px;
+  max-width: 1200px; margin: 0 auto;
+}
+.section-header {
+  display: flex; align-items: baseline; gap: 20px; margin-bottom: 64px;
+}
+.section-label {
+  font-size: 10px; font-weight: 500; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--gold); white-space: nowrap;
+}
+.section-line { flex: 1; height: 1px; background: var(--border); }
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(36px, 4vw, 52px); font-weight: 300;
+  line-height: 1.1; letter-spacing: -0.02em; color: var(--navy);
+  margin-bottom: 64px;
+}
+
+.awards-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px;
+  background: var(--border);
+}
+.award-card {
+  background: var(--offwhite); padding: 40px 36px;
+  position: relative; overflow: hidden;
+  transition: background 0.3s;
+}
+.award-card:hover { background: var(--cream); }
+.award-card::after {
+  content: ''; position: absolute; bottom: 0; left: 0;
+  height: 2px; width: 0; background: var(--gold);
+  transition: width 0.4s ease;
+}
+.award-card:hover::after { width: 100%; }
+.award-icon {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 52px; font-weight: 300;
+  color: rgba(196,131,42,0.12); line-height: 1;
+  margin-bottom: 20px; letter-spacing: -0.02em;
+}
+.award-org {
+  font-size: 10px; font-weight: 500; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 10px;
+}
+.award-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px; font-weight: 400; color: var(--navy);
+  letter-spacing: -0.01em; margin-bottom: 12px; line-height: 1.2;
+}
+.award-desc {
+  font-size: 13px; font-weight: 300; line-height: 1.7; color: var(--muted);
 }
 
 /* ── TIMELINE ── */
 .timeline-section {
   padding: 120px 48px;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1200px; margin: 0 auto;
 }
-.section-header {
-  display: flex;
-  align-items: baseline;
-  gap: 20px;
-  margin-bottom: 64px;
-}
-.section-label {
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--gold);
-  white-space: nowrap;
-}
-.section-line {
-  flex: 1;
-  height: 1px;
-  background: var(--border);
-}
-.section-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(36px, 4vw, 52px);
-  font-weight: 300;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  color: var(--navy);
-  margin-bottom: 64px;
-}
-
-.timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
+.timeline { display: flex; flex-direction: column; gap: 0; }
 .tl-item {
-  display: grid;
-  grid-template-columns: 180px 1px 1fr;
-  gap: 0 40px;
-  padding-bottom: 56px;
-  position: relative;
+  display: grid; grid-template-columns: 180px 1px 1fr;
+  gap: 0 40px; padding-bottom: 56px; position: relative;
 }
 .tl-item:last-child { padding-bottom: 0; }
-.tl-date {
-  text-align: right;
-  padding-top: 4px;
-}
+.tl-date { text-align: right; padding-top: 4px; }
 .tl-date-range {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 22px;
-  font-weight: 300;
-  color: var(--navy);
-  letter-spacing: -0.01em;
-  display: block;
+  font-size: 22px; font-weight: 300; color: var(--navy);
+  letter-spacing: -0.01em; display: block;
 }
 .tl-date-sub {
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--gold);
-  display: block;
-  margin-top: 4px;
+  font-size: 10px; font-weight: 500; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--gold); display: block; margin-top: 4px;
 }
 .tl-spine {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative; display: flex; flex-direction: column; align-items: center;
 }
 .tl-dot {
-  width: 9px; height: 9px;
-  border: 1px solid var(--gold);
-  border-radius: 50%;
-  background: var(--offwhite);
-  flex-shrink: 0;
-  margin-top: 8px;
-  position: relative;
-  z-index: 1;
+  width: 9px; height: 9px; border: 1px solid var(--gold);
+  border-radius: 50%; background: var(--offwhite);
+  flex-shrink: 0; margin-top: 8px; position: relative; z-index: 1;
 }
-.tl-dot.active {
-  background: var(--gold);
-}
-.tl-line {
-  flex: 1;
-  width: 1px;
-  background: var(--border);
-  margin-top: 4px;
-}
+.tl-dot.active { background: var(--gold); }
+.tl-line { flex: 1; width: 1px; background: var(--border); margin-top: 4px; }
 .tl-item:last-child .tl-line { display: none; }
-.tl-content {
-  padding-top: 2px;
-}
+.tl-content { padding-top: 2px; }
 .tl-role {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 24px;
-  font-weight: 400;
-  color: var(--navy);
-  letter-spacing: -0.01em;
-  margin-bottom: 4px;
+  font-size: 24px; font-weight: 400; color: var(--navy);
+  letter-spacing: -0.01em; margin-bottom: 4px;
 }
 .tl-company {
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 16px;
+  font-size: 11px; font-weight: 500; letter-spacing: 0.15em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 16px;
 }
 .tl-desc {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.75;
-  color: var(--muted);
-  max-width: 560px;
+  font-size: 14px; font-weight: 300; line-height: 1.75;
+  color: var(--muted); max-width: 560px;
+}
+.tl-highlights {
+  margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px;
+}
+.tl-highlight {
+  display: inline-block; padding: 5px 14px;
+  background: rgba(196,131,42,0.08);
+  border: 1px solid var(--border);
+  font-size: 11px; font-weight: 500; letter-spacing: 0.08em;
+  color: var(--gold);
 }
 .tl-tag {
-  display: inline-block;
-  margin-top: 16px;
-  padding: 4px 12px;
+  display: inline-block; margin-top: 16px; padding: 4px 12px;
   border: 1px solid var(--border);
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
+  font-size: 10px; font-weight: 500; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--muted);
 }
 
-/* ── FOUNDER STORY ── */
-.founder-section {
-  background: var(--navy);
-  padding: 120px 48px;
-  position: relative;
-  overflow: hidden;
+/* ── BUILDER STORY ── */
+.builder-section {
+  background: var(--navy); padding: 120px 48px;
+  position: relative; overflow: hidden;
 }
-.founder-bg {
-  position: absolute;
-  bottom: -40px; right: -40px;
+.builder-bg {
+  position: absolute; bottom: -40px; right: -40px;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 240px;
-  font-weight: 300;
+  font-size: 240px; font-weight: 300;
   color: rgba(196,131,42,0.04);
-  line-height: 1;
-  pointer-events: none;
-  user-select: none;
+  line-height: 1; pointer-events: none; user-select: none;
 }
-.founder-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: center;
+.builder-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
 }
-.founder-label {
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 24px;
+.builder-label {
+  font-size: 10px; font-weight: 500; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 24px;
 }
-.founder-quote {
+.builder-quote {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(28px, 3.5vw, 46px);
-  font-weight: 300;
-  line-height: 1.25;
-  color: var(--cream);
-  letter-spacing: -0.01em;
+  font-size: clamp(28px, 3.5vw, 46px); font-weight: 300;
+  line-height: 1.25; color: var(--cream); letter-spacing: -0.01em;
 }
-.founder-quote em {
-  font-style: italic;
-  color: var(--gold2);
+.builder-quote em { font-style: italic; color: var(--gold2); }
+.builder-body p {
+  font-size: 15px; font-weight: 300; line-height: 1.85;
+  color: rgba(245,240,232,0.55); margin-bottom: 20px;
 }
-.founder-body p {
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 1.85;
-  color: rgba(245,240,232,0.55);
-  margin-bottom: 20px;
+.builder-body p strong { color: var(--cream); font-weight: 400; }
+.builder-divider { width: 40px; height: 1px; background: var(--gold); margin: 28px 0; }
+.builder-stats {
+  margin-top: 32px; display: flex; flex-direction: column; gap: 20px;
 }
-.founder-body p strong {
-  color: var(--cream);
-  font-weight: 400;
+.builder-stat-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px; font-weight: 300; color: var(--cream);
+  line-height: 1; letter-spacing: -0.02em;
 }
-.founder-divider {
-  width: 40px; height: 1px;
-  background: var(--gold);
-  margin: 28px 0;
+.builder-stat-num span { color: var(--gold2); }
+.builder-stat-lbl {
+  font-size: 10px; font-weight: 500; letter-spacing: 0.15em;
+  text-transform: uppercase; color: rgba(245,240,232,0.35); margin-top: 6px;
+}
+
+/* ── WHAT I'M LOOKING FOR ── */
+.seeking-section {
+  background: var(--cream); padding: 80px 48px;
+  border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+}
+.seeking-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: start;
+}
+.seeking-inner h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 38px; font-weight: 300; color: var(--navy);
+  letter-spacing: -0.01em; line-height: 1.2;
+  padding-top: 4px;
+}
+.seeking-inner h3 em { font-style: italic; color: var(--gold); }
+.seeking-body p {
+  font-size: 15px; font-weight: 300; line-height: 1.85;
+  color: var(--muted); margin-bottom: 20px;
+}
+.seeking-body p strong { color: var(--text); font-weight: 500; }
+.seeking-tags {
+  display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px;
+}
+.seeking-tag {
+  padding: 8px 18px; border: 1px solid var(--border);
+  background: var(--offwhite);
+  font-size: 11px; font-weight: 500; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--navy);
 }
 
 /* ── PROJECTS ── */
 .projects-section {
-  padding: 120px 48px;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 120px 48px; max-width: 1200px; margin: 0 auto;
 }
 .projects-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 2px;
   background: var(--border);
 }
 .project-card {
-  background: var(--offwhite);
-  padding: 48px;
-  position: relative;
-  overflow: hidden;
-  transition: background 0.3s;
-  text-decoration: none;
-  color: inherit;
-  display: block;
+  background: var(--offwhite); padding: 48px;
+  position: relative; overflow: hidden;
+  transition: background 0.3s; text-decoration: none; color: inherit; display: block;
 }
 .project-card:hover { background: var(--cream); }
 .project-card::before {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 0;
-  height: 2px;
-  width: 0;
-  background: var(--gold);
-  transition: width 0.4s ease;
+  content: ''; position: absolute; bottom: 0; left: 0;
+  height: 2px; width: 0; background: var(--gold); transition: width 0.4s ease;
 }
 .project-card:hover::before { width: 100%; }
 .project-num {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 72px;
-  font-weight: 300;
-  color: rgba(196,131,42,0.1);
-  line-height: 1;
-  margin-bottom: 24px;
-  letter-spacing: -0.02em;
+  font-size: 72px; font-weight: 300;
+  color: rgba(196,131,42,0.1); line-height: 1;
+  margin-bottom: 24px; letter-spacing: -0.02em;
 }
 .project-label {
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 12px;
+  font-size: 10px; font-weight: 500; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 12px;
 }
 .project-name {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 32px;
-  font-weight: 400;
-  color: var(--navy);
-  letter-spacing: -0.01em;
-  margin-bottom: 16px;
-  line-height: 1.1;
+  font-size: 32px; font-weight: 400; color: var(--navy);
+  letter-spacing: -0.01em; margin-bottom: 16px; line-height: 1.1;
 }
 .project-desc {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.75;
-  color: var(--muted);
-  margin-bottom: 28px;
+  font-size: 14px; font-weight: 300; line-height: 1.75;
+  color: var(--muted); margin-bottom: 28px;
 }
 .project-arrow {
-  font-size: 20px;
-  color: var(--gold);
-  transition: transform 0.2s;
-  display: inline-block;
+  font-size: 20px; color: var(--gold); transition: transform 0.2s; display: inline-block;
 }
 .project-card:hover .project-arrow { transform: translate(4px, -4px); }
 
 /* ── CONTENT BAND ── */
 .content-band {
-  background: var(--cream);
-  padding: 80px 48px;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  background: var(--cream); padding: 80px 48px;
+  border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
 }
 .content-band-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 80px;
-  align-items: center;
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: center;
 }
 .content-band h3 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 36px;
-  font-weight: 300;
-  color: var(--navy);
-  letter-spacing: -0.01em;
-  line-height: 1.2;
+  font-size: 36px; font-weight: 300; color: var(--navy);
+  letter-spacing: -0.01em; line-height: 1.2;
 }
-.content-channels {
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
-}
+.content-channels { display: flex; gap: 24px; flex-wrap: wrap; }
 .channel-pill {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 20px;
-  border: 1px solid var(--border);
-  background: var(--offwhite);
-  text-decoration: none;
-  transition: border-color 0.2s, transform 0.2s;
+  display: flex; align-items: center; gap: 10px; padding: 14px 20px;
+  border: 1px solid var(--border); background: var(--offwhite);
+  text-decoration: none; transition: border-color 0.2s, transform 0.2s;
 }
-.channel-pill:hover {
-  border-color: var(--gold);
-  transform: translateY(-2px);
-}
-.channel-icon {
-  font-size: 16px;
-}
-.channel-info {}
-.channel-name {
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--navy);
-  display: block;
-}
-.channel-stat {
-  font-size: 10px;
-  color: var(--muted);
-  letter-spacing: 0.05em;
-}
+.channel-pill:hover { border-color: var(--gold); transform: translateY(-2px); }
+.channel-icon { font-size: 16px; }
+.channel-name { font-size: 12px; font-weight: 500; color: var(--navy); display: block; }
+.channel-stat { font-size: 10px; color: var(--muted); letter-spacing: 0.05em; }
 
 /* ── CONTACT ── */
 .contact-section {
-  background: var(--navy);
-  padding: 120px 48px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+  background: var(--navy); padding: 120px 48px;
+  text-align: center; position: relative; overflow: hidden;
 }
 .contact-bg {
-  position: absolute;
-  top: 50%; left: 50%;
+  position: absolute; top: 50%; left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 280px;
-  font-weight: 300;
-  color: rgba(196,131,42,0.04);
-  white-space: nowrap;
-  pointer-events: none;
-  user-select: none;
-  line-height: 1;
+  font-family: 'Cormorant Garamond', serif; font-size: 280px; font-weight: 300;
+  color: rgba(196,131,42,0.04); white-space: nowrap;
+  pointer-events: none; user-select: none; line-height: 1;
 }
-.contact-inner {
-  position: relative;
-  z-index: 1;
-}
+.contact-inner { position: relative; z-index: 1; }
 .contact-label {
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 24px;
+  font-size: 10px; font-weight: 500; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 24px;
 }
 .contact-heading {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(48px, 7vw, 96px);
-  font-weight: 300;
-  color: var(--cream);
-  letter-spacing: -0.02em;
-  line-height: 0.95;
-  margin-bottom: 40px;
+  font-size: clamp(48px, 7vw, 96px); font-weight: 300;
+  color: var(--cream); letter-spacing: -0.02em; line-height: 0.95; margin-bottom: 40px;
 }
-.contact-heading em {
-  font-style: italic;
-  color: var(--gold2);
-}
+.contact-heading em { font-style: italic; color: var(--gold2); }
 .contact-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
+  display: flex; align-items: center; justify-content: center;
+  gap: 40px; flex-wrap: wrap;
 }
 .contact-link {
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: rgba(245,240,232,0.5);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(245,240,232,0.15);
-  padding-bottom: 3px;
+  font-size: 12px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase;
+  color: rgba(245,240,232,0.5); text-decoration: none;
+  border-bottom: 1px solid rgba(245,240,232,0.15); padding-bottom: 3px;
   transition: color 0.2s, border-color 0.2s;
 }
-.contact-link:hover {
-  color: var(--gold2);
-  border-color: var(--gold2);
-}
+.contact-link:hover { color: var(--gold2); border-color: var(--gold2); }
 
 /* ── FOOTER ── */
 footer {
-  padding: 28px 48px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid var(--border);
-  background: var(--offwhite);
+  padding: 28px 48px; display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid var(--border); background: var(--offwhite);
 }
 .footer-name {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 15px;
-  font-weight: 300;
-  color: var(--muted);
-  letter-spacing: 0.05em;
+  font-size: 15px; font-weight: 300; color: var(--muted); letter-spacing: 0.05em;
 }
 .footer-right {
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: rgba(122,112,96,0.5);
+  font-size: 10px; font-weight: 500; letter-spacing: 0.15em;
+  text-transform: uppercase; color: rgba(122,112,96,0.5);
 }
 
 /* ── ANIMATIONS ── */
@@ -766,20 +599,12 @@ footer {
   0%,100% { opacity:0.3; transform:scaleY(1); }
   50%      { opacity:0.8; transform:scaleY(1.2); }
 }
-
 .reveal {
-  opacity: 1;
-  transform: translateY(0);
+  opacity: 1; transform: translateY(0);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
-.reveal.animate {
-  opacity: 0;
-  transform: translateY(32px);
-}
-.reveal.animate.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+.reveal.animate { opacity: 0; transform: translateY(32px); }
+.reveal.animate.visible { opacity: 1; transform: translateY(0); }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
@@ -789,10 +614,14 @@ footer {
   .hero-metrics { display: none; }
   .intro { grid-template-columns: 1fr; gap: 40px; padding: 80px 24px; }
   .stats-band { grid-template-columns: 1fr 1fr; padding: 48px 24px; gap: 1px; }
+  .awards-section { padding: 80px 24px; }
+  .awards-grid { grid-template-columns: 1fr; }
   .timeline-section { padding: 80px 24px; }
   .tl-item { grid-template-columns: 100px 1px 1fr; gap: 0 24px; }
-  .founder-inner { grid-template-columns: 1fr; gap: 40px; }
-  .founder-section { padding: 80px 24px; }
+  .builder-inner { grid-template-columns: 1fr; gap: 40px; }
+  .builder-section { padding: 80px 24px; }
+  .seeking-inner { grid-template-columns: 1fr; gap: 32px; }
+  .seeking-section { padding: 60px 24px; }
   .projects-grid { grid-template-columns: 1fr; }
   .projects-section { padding: 80px 24px; }
   .content-band { padding: 60px 24px; }
@@ -811,6 +640,7 @@ footer {
   <a href="#" class="nav-logo">Tomi Gbeleyi</a>
   <ul class="nav-links">
     <li><a href="#story">Story</a></li>
+    <li><a href="#awards">Awards</a></li>
     <li><a href="#career">Career</a></li>
     <li><a href="#work">Work</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -821,16 +651,16 @@ footer {
 <section class="hero">
   <div class="hero-bg-text">CLOSED WON</div>
   <div class="hero-line"></div>
-  <div class="hero-eyebrow">Sales Leader · Founder · Builder</div>
+  <div class="hero-eyebrow">Sales Leader · Builder · Country Manager, Google Canada</div>
   <h1>
     Tomi<br>
     <em>Gbeleyi</em>
   </h1>
   <p class="hero-sub">
-    Built a career in sales and a business from scratch, both without a playbook. Turns out building without a roadmap is the most useful skill there is.
+    $100M+ in net new revenue. 110% blended attainment. 34 awards. Built a sales team and a beauty brand from scratch, both without a playbook. Looking to bring that to a mid-market or enterprise team that wants a builder in the room.
   </p>
   <div class="hero-cta">
-    <a href="#work" class="btn-primary">View My Work →</a>
+    <a href="#career" class="btn-primary">View Track Record →</a>
     <a href="#contact" class="btn-ghost">Get in Touch</a>
   </div>
 
@@ -862,10 +692,10 @@ footer {
     <h2>Built from<br><em>Scratch.</em><br>Twice.</h2>
   </div>
   <div class="intro-body reveal">
-    <p>No inherited network. No blueprint. No one in my corner who had done it before. I built a career in sales and a business from scratch, both without a roadmap, and that turns out to be the most useful thing I know how to do.</p>
+    <p>No inherited book. No inherited network. No one in my corner who had done it before. I built a career in sales and a business from scratch, both without a roadmap, and that turns out to be the most useful thing I know how to do.</p>
     <div class="intro-divider"></div>
-    <p>While working in tech, I looked around at the beauty industry and saw a problem nobody was solving. Women with darker skin tones were underserved, on shelves, on runways, in every makeup artist's kit. <strong>So I started MFMG Cosmetics with nothing but my phone and a business plan.</strong> I built a community of 300,000+ women, raised $100K in non-dilutive funding, won the Visa She's Next Grant, got accepted into NEXT Canada, and landed in the New York Times, all before the brand had a formal marketing budget.</p>
-    <p>Then I took everything I learned building something from zero and applied it inside one of the world's largest companies. <strong>$100M+ in net new revenue</strong> and five years at Google later, I am building again, this time for the people doing exactly what I did: figuring it out without anyone showing them how.</p>
+    <p>At Google, I grew into a new scope every year: 300% quota as a Noogler, 140% as a Sales Principal leading a pod of three, then Country Manager for Google Canada's acquisitions business, building a seven-person AE team from zero, compressing ramp from 5 quarters to 3, and generating <strong>$100M+ in net new revenue at 110% blended attainment.</strong></p>
+    <p>While building in tech, I was also building outside it. I started MFMG Cosmetics with nothing but my phone and a business plan. A 300,000-person community, $100K in non-dilutive funding, coverage in the New York Times and 20+ publications, all without a PR budget. <strong>Community is the product. Build the people first. The revenue follows.</strong></p>
   </div>
 </section>
 
@@ -889,13 +719,61 @@ footer {
   </div>
 </div>
 
+<!-- AWARDS -->
+<section class="awards-section" id="awards">
+  <div class="section-header">
+    <span class="section-label">Recognition</span>
+    <div class="section-line"></div>
+  </div>
+  <h2 class="section-title reveal">Awards & Distinctions</h2>
+
+  <div class="awards-grid">
+    <div class="award-card reveal">
+      <div class="award-icon">01</div>
+      <div class="award-org">Google · 2024</div>
+      <div class="award-name">NBS Canada Leadership Award</div>
+      <div class="award-desc">Awarded for building the New Business Sales team from scratch and delivering $100M+ in net new revenue at 110% blended attainment. Recognised by Americas leadership.</div>
+    </div>
+    <div class="award-card reveal">
+      <div class="award-icon">02</div>
+      <div class="award-org">Google · Americas</div>
+      <div class="award-name">Regional Forecast Accuracy Award</div>
+      <div class="award-desc">One of few managers across the Americas to earn this distinction. Recognised for building a forecasting system that delivered consistent, reliable pipeline visibility quarter over quarter.</div>
+    </div>
+    <div class="award-card reveal">
+      <div class="award-icon">03</div>
+      <div class="award-org">Google · 2021</div>
+      <div class="award-name">Top Noogler Award</div>
+      <div class="award-desc">Highest Noogler performance in the Americas in first year. 300% quota attainment, cold to close with no inherited book of business. Closed PointsBet ahead of their Canadian market launch.</div>
+    </div>
+    <div class="award-card reveal">
+      <div class="award-icon">04</div>
+      <div class="award-org">Google · 2022</div>
+      <div class="award-name">Rising Star Award</div>
+      <div class="award-desc">Recognised for accelerated growth from individual contributor to Sales Principal in under 18 months, along with the highest individual revenue contribution in NBS Canada history at 140% quota.</div>
+    </div>
+    <div class="award-card reveal">
+      <div class="award-icon">05</div>
+      <div class="award-org">Visa · NEXT Canada</div>
+      <div class="award-name">She's Next Grant &amp; Accelerator</div>
+      <div class="award-desc">Won the Visa She's Next Grant and was accepted into the NEXT Canada accelerator for MFMG Cosmetics. Recognised among Canada's top emerging founders.</div>
+    </div>
+    <div class="award-card reveal">
+      <div class="award-icon">06</div>
+      <div class="award-org">34 Total · 2017–2024</div>
+      <div class="award-name">Peer &amp; Leadership Recognition</div>
+      <div class="award-desc">34 total awards across Google and founder career, peer-nominated and leadership-awarded. Consistent recognition across individual performance, team building, and cross-functional impact.</div>
+    </div>
+  </div>
+</section>
+
 <!-- CAREER TIMELINE -->
 <section class="timeline-section" id="career">
   <div class="section-header">
     <span class="section-label">Career</span>
     <div class="section-line"></div>
   </div>
-  <h2 class="section-title reveal">The Path</h2>
+  <h2 class="section-title reveal">The Track Record</h2>
 
   <div class="timeline">
 
@@ -910,9 +788,15 @@ footer {
       </div>
       <div class="tl-content">
         <div class="tl-role">Head of New Business Sales</div>
-        <div class="tl-company">Google Canada, Toronto</div>
-        <div class="tl-desc">Built a seven-person AE team from scratch, generated $100M+ in net new revenue, and hit 110% blended attainment. Compressed new hire ramp from 5 quarters to 3. Earned the Regional Forecast Accuracy Award across the Americas.</div>
-        <span class="tl-tag">People Manager</span>
+        <div class="tl-company">Google Canada · Country Manager, Acquisitions</div>
+        <div class="tl-desc">Built the NBS Canada team from zero: hired all seven AEs, designed onboarding, authored the coaching cadence, and rebuilt the ramp architecture. Compressed new hire ramp from 5 quarters to 3. Average seller productivity improved from $1.2M to $2M per quarter. Provided upward feedback directly to the Americas Director on quota design and GTM strategy that shaped regional decisions.</div>
+        <div class="tl-highlights">
+          <span class="tl-highlight">$100M+ Net New Revenue</span>
+          <span class="tl-highlight">110% Blended Attainment</span>
+          <span class="tl-highlight">5→3 Quarter Ramp</span>
+          <span class="tl-highlight">NBS Leadership Award</span>
+          <span class="tl-highlight">Forecast Accuracy Award</span>
+        </div>
       </div>
     </div>
 
@@ -927,9 +811,13 @@ footer {
       </div>
       <div class="tl-content">
         <div class="tl-role">Sales Principal</div>
-        <div class="tl-company">Google Canada, Toronto</div>
-        <div class="tl-desc">140% blended quota attainment. Highest individual revenue contribution in NBS Canada history. Created the coaching and training framework for the newly launched Sales Principal role.</div>
-        <span class="tl-tag">Team Lead</span>
+        <div class="tl-company">Google Canada · New Business Sales</div>
+        <div class="tl-desc">140% blended quota attainment. Highest individual revenue contribution in NBS Canada history. Authored the coaching and onboarding framework for the newly launched Sales Principal role, which became the playbook used to scale the team. Led a pod of three AEs through the motion redesign, managing change resistance from high-status stakeholders by bringing them into the design.</div>
+        <div class="tl-highlights">
+          <span class="tl-highlight">140% Quota</span>
+          <span class="tl-highlight">Highest NBS Revenue · Canada</span>
+          <span class="tl-highlight">Rising Star Award</span>
+        </div>
       </div>
     </div>
 
@@ -944,9 +832,13 @@ footer {
       </div>
       <div class="tl-content">
         <div class="tl-role">Senior Account Executive</div>
-        <div class="tl-company">Google Canada, Toronto</div>
-        <div class="tl-desc">300% quota attainment, highest Noogler performance in the Americas. Top Noogler Award, Rising Star Award. Closed PointsBet as a net new client ahead of their Canadian market launch.</div>
-        <span class="tl-tag">Individual Contributor</span>
+        <div class="tl-company">Google Canada · New Business Sales</div>
+        <div class="tl-desc">300% quota attainment, highest Noogler performance in the Americas. Cold to close, no inherited book of business. Closed PointsBet as a net new client ahead of their Canadian market launch, navigating legal, product, marketing, and CMO stakeholders simultaneously.</div>
+        <div class="tl-highlights">
+          <span class="tl-highlight">300% Quota</span>
+          <span class="tl-highlight">Top Noogler · Americas</span>
+          <span class="tl-highlight">PointsBet Market Launch Win</span>
+        </div>
       </div>
     </div>
 
@@ -961,9 +853,13 @@ footer {
       </div>
       <div class="tl-content">
         <div class="tl-role">National Manager, Canada</div>
-        <div class="tl-company">Lighthouse Labs, Toronto</div>
-        <div class="tl-desc">Doubled employer pipeline from 2,750 to 5,500. Improved close rate from 15% to 21%. Led 8 people across 4 departments. Placed 95% of graduates in roles within 120 days.</div>
-        <span class="tl-tag">People Manager</span>
+        <div class="tl-company">Lighthouse Labs · Toronto</div>
+        <div class="tl-desc">Doubled employer pipeline from 2,750 to 5,500. Improved close rate from 15% to 21%. Led 8 people across 4 departments. Placed 95% of graduates in roles within 120 days, a placement record that held through my tenure.</div>
+        <div class="tl-highlights">
+          <span class="tl-highlight">2× Pipeline Growth</span>
+          <span class="tl-highlight">15% → 21% Close Rate</span>
+          <span class="tl-highlight">95% Grad Placement</span>
+        </div>
       </div>
     </div>
 
@@ -977,78 +873,99 @@ footer {
         <div class="tl-line"></div>
       </div>
       <div class="tl-content">
-        <div class="tl-role">Founder & CEO</div>
-        <div class="tl-company">MFMG Cosmetics, Toronto</div>
-        <div class="tl-desc">Built a DTC beauty brand from zero. Secured $100K in non-dilutive funding. Coverage in New York Times, Teen Vogue, Globe and Mail, and 17+ other publications. Zero PR budget.</div>
-        <span class="tl-tag">Founder</span>
+        <div class="tl-role">Founder &amp; CEO</div>
+        <div class="tl-company">MFMG Cosmetics · Toronto</div>
+        <div class="tl-desc">Built a DTC beauty brand from zero while working full-time in tech. Cold-called labs using my sales background, pitched them like a client, launched a product that sold out immediately. The Glitch Palette was worn by Gabrielle Union, Bozoma Saint John, India Arie, and Cynthia Erivo. #MakeupForMelaninGirls used over one million times.</div>
+        <div class="tl-highlights">
+          <span class="tl-highlight">300K+ Community</span>
+          <span class="tl-highlight">$100K Non-Dilutive Funding</span>
+          <span class="tl-highlight">20+ Publications</span>
+          <span class="tl-highlight">Visa She's Next Grant</span>
+        </div>
       </div>
     </div>
 
   </div>
 </section>
 
-<!-- FOUNDER STORY -->
-<section class="founder-section">
-  <div class="founder-bg">BUILT</div>
-  <div class="founder-inner">
+<!-- BUILDER STORY -->
+<section class="builder-section">
+  <div class="builder-bg">BUILT</div>
+  <div class="builder-inner">
     <div>
-      <div class="founder-label">MFMG Cosmetics</div>
-      <div class="founder-quote reveal">
-        "I started with nothing but my phone, an idea, and a belief that <em>the beauty industry had a problem worth solving.</em>"
+      <div class="builder-label">MFMG Cosmetics · 2017–2022</div>
+      <div class="builder-quote reveal">
+        "I cold-called labs using my sales background, pitched them like a client, and <em>built something real from nothing.</em>"
       </div>
-      <div style="margin-top:32px;display:flex;flex-direction:column;gap:20px;" class="reveal">
+      <div class="builder-stats reveal">
         <div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;color:#FAF8F4;line-height:1;letter-spacing:-0.02em;">300K<span style="color:#E8A84C;">+</span></div>
-          <div style="font-size:10px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:rgba(245,240,232,0.35);margin-top:6px;">Community built from zero</div>
+          <div class="builder-stat-num">300K<span>+</span></div>
+          <div class="builder-stat-lbl">Community built from zero</div>
         </div>
         <div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;color:#FAF8F4;line-height:1;letter-spacing:-0.02em;">$100<span style="color:#E8A84C;">K</span></div>
-          <div style="font-size:10px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:rgba(245,240,232,0.35);margin-top:6px;">Non-dilutive funding raised</div>
+          <div class="builder-stat-num">$100<span>K</span></div>
+          <div class="builder-stat-lbl">Non-dilutive funding raised</div>
         </div>
         <div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;color:#FAF8F4;line-height:1;letter-spacing:-0.02em;">20<span style="color:#E8A84C;">+</span></div>
-          <div style="font-size:10px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:rgba(245,240,232,0.35);margin-top:6px;">Media publications, zero PR budget</div>
+          <div class="builder-stat-num">20<span>+</span></div>
+          <div class="builder-stat-lbl">Media publications, zero PR budget</div>
         </div>
       </div>
     </div>
-    <div class="founder-body reveal">
-      <p>MFMG Cosmetics started as an Instagram page in 2015. I was showcasing makeup artists who worked beautifully with darker skin tones, because when I modelled, the artists on set were rarely prepared for me. <strong>"It was the first direct impact to my self-esteem,"</strong> I said at the time. So I decided to fix it.</p>
-      <div class="founder-divider"></div>
-      <p>The page hit 10,000 followers in a month. A New York Times journalist reached out after one of my campaigns. Readers started asking me to create my own products. I cold-called labs using my sales background, pitched them like a client, and eventually launched the MFMG Glitter Palette, which sold out immediately.</p>
-      <p>The brand grew into a <strong>global DTC line</strong> worn by Gabrielle Union, Bozoma Saint John, India Arie, and Cynthia Erivo. I won the Visa She's Next Grant, got accepted into the NEXT Canada accelerator, was featured on Shopify Masters, and raised $100K in non-dilutive funding, all while working full-time in tech. The hashtag #MakeupForMelaninGirls has been used over one million times.</p>
-      <p>The lesson I carried into every sales leadership role after: <strong>community is the product. Build the people first. The revenue follows.</strong></p>
+    <div class="builder-body reveal">
+      <p>MFMG Cosmetics started as an Instagram page in 2015 , I was showcasing makeup artists who worked beautifully with darker skin tones, because when I modelled, the artists on set were rarely prepared for me. So I decided to fix it.</p>
+      <div class="builder-divider"></div>
+      <p>The page hit 10,000 followers in a month. A New York Times journalist reached out. Readers started asking me to create products. I did what I know how to do , I called the labs, pitched them like a client, and eventually launched the MFMG Glitter Palette. It sold out immediately.</p>
+      <p>The brand grew into a <strong>global DTC line</strong> featured in New York Times, Teen Vogue, Globe and Mail, Elle Canada, Shopify Masters, and 16+ other publications. Worn by Gabrielle Union, Bozoma Saint John, India Arie, and Cynthia Erivo. I won the Visa She's Next Grant, got accepted into NEXT Canada, and raised $100K in non-dilutive funding , all while holding a full-time role in tech.</p>
+      <p>The lesson that carried into every sales leadership role after: <strong>build the system, not the dependency. A team that runs without you in the room is the only team worth building.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT I'M LOOKING FOR -->
+<section class="seeking-section" id="work">
+  <div class="seeking-inner reveal">
+    <h3>What I'm<br>looking<br>for <em>next</em></h3>
+    <div class="seeking-body">
+      <p>I am looking for a <strong>mid-market or enterprise sales role</strong> at an organisation that wants a builder , not someone to maintain a number, but someone to build the system that makes the number inevitable.</p>
+      <p>I thrive in <strong>complex selling motions</strong>: multi-stakeholder, multi-product, extended timelines, buyers who need to be shown ROI before they move. I've coached AEs to sequence conversations so that by the time we're in the room together, the deal is already built. That's what I want to keep doing , at a company where the product has real proof points and the mission is worth selling.</p>
+      <p>I bring a coaching operating cadence, a ramp architecture that compresses time-to-productivity, and a consultative motion built for buyers who think in outcomes, not features. I've done it in advertising technology, bootcamp education, and DTC consumer. I'm ready to build it somewhere new.</p>
+      <div class="seeking-tags">
+        <span class="seeking-tag">Mid-Market Sales</span>
+        <span class="seeking-tag">Enterprise Sales</span>
+        <span class="seeking-tag">Sales Leadership</span>
+        <span class="seeking-tag">Complex Deals</span>
+        <span class="seeking-tag">Multi-Stakeholder</span>
+        <span class="seeking-tag">Consultative Motion</span>
+        <span class="seeking-tag">Builder Culture</span>
+        <span class="seeking-tag">Toronto / Remote</span>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section class="projects-section" id="work">
+<section class="projects-section">
   <div class="section-header">
-    <span class="section-label">Current Work</span>
+    <span class="section-label">Side Project</span>
     <div class="section-line"></div>
   </div>
-  <h2 class="section-title reveal">What I'm Building</h2>
+  <h2 class="section-title reveal">Building in Public</h2>
 
   <div class="projects-grid">
     <a href="https://tryclosedwon.com" target="_blank" class="project-card reveal">
       <div class="project-num">01</div>
       <div class="project-label">Product</div>
       <div class="project-name">Closed Won</div>
-      <div class="project-desc">A job board for sales professionals with AI tools built into every listing, resume tailoring, interview prep, salary benchmarks. Built in one day using Claude. Live and growing.</div>
+      <div class="project-desc">A job board for sales professionals with AI tools built into every listing , resume tailoring, interview prep, salary benchmarks. Built in one day using Claude. Live and growing. Because if you're going to preach AI-powered selling, you should be building with AI too.</div>
       <span class="project-arrow">↗</span>
     </a>
 
     <div class="project-card reveal" style="cursor:default;">
       <div class="project-num">02</div>
-      <div class="project-label">Expertise</div>
-      <div class="project-name">Sales Leadership</div>
-      <div class="project-desc">Available for fractional sales leadership, advisory, and speaking engagements. Particular focus on building new business teams, SDR and AE coaching, and AI-powered sales workflows.</div>
-    </div>
-    <div class="project-card reveal" style="cursor:default;">
-      <div class="project-num">03</div>
-      <div class="project-label">Recognition</div>
-      <div class="project-name">Awards & Press</div>
-      <div class="project-desc">NBS Canada Leadership Award. Regional Forecast Accuracy Award. Top Noogler. Rising Star. Featured in New York Times, Teen Vogue, Globe and Mail, Elle Canada, and 16+ other publications.</div>
+      <div class="project-label">Press</div>
+      <div class="project-name">Media Coverage</div>
+      <div class="project-desc">New York Times. Teen Vogue. Globe and Mail. Elle Canada. Shopify Masters. 16+ additional publications , all with zero PR budget. If you can build a story, you can sell anything. Featured on Shopify's podcast as an example of community-first growth done right.</div>
     </div>
   </div>
 </section>
@@ -1085,7 +1002,7 @@ footer {
       Let's<br><em>Connect</em>
     </h2>
     <div class="contact-links">
-      <a href="/cdn-cgi/l/email-protection#d3a7b4b1b6bfb6aaba93b4beb2babffdb0bcbe" class="contact-link"><span class="__cf_email__" data-cfemail="57233035323b322e3e17303a363e3b7934383a">[email&#160;protected]</span></a>
+      <a href="mailto:hello@tomigbeleyi.com" class="contact-link">hello@tomigbeleyi.com</a>
       <a href="https://linkedin.com/in/tomigbeleyi" target="_blank" class="contact-link">LinkedIn</a>
       <a href="https://tryclosedwon.com" target="_blank" class="contact-link">tryclosedwon.com</a>
     </div>
@@ -1097,7 +1014,7 @@ footer {
   <span class="footer-right">Toronto · 2026</span>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 // Custom cursor
 const cursor = document.getElementById('cursor');
 const ring = document.getElementById('cursorRing');
@@ -1124,6 +1041,15 @@ document.querySelectorAll('a, button').forEach(el => {
 
 // Scroll reveal
 const revealEls = document.querySelectorAll('.reveal');
+revealEls.forEach(el => el.classList.add('animate'));
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
-    if (entry.isIntersectin
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+revealEls.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
